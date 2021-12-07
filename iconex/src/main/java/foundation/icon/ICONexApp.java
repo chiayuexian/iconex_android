@@ -51,7 +51,7 @@ public class ICONexApp extends Application {
 //    public static String language = "";
 
     // ========== Preference ================
-    public static int network = 0;
+    public static int network = MyConstants.NETWORK_TEST;
     public static Urls.Network NETWORK = Urls.Network.Euljiro;
 
     // ========== Preference ================
@@ -104,6 +104,7 @@ public class ICONexApp extends Application {
 
     private void loadPreferences() {
         PreferenceUtil mPreference = new PreferenceUtil(getApplicationContext());
+        mPreference.setNetwork(MyConstants.NETWORK_TEST);
         mPreference.loadPreference();
     }
 
