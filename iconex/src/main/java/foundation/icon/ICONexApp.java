@@ -104,6 +104,7 @@ public class ICONexApp extends Application {
 
     private void loadPreferences() {
         PreferenceUtil mPreference = new PreferenceUtil(getApplicationContext());
+        mPreference.setDeveloper(true);
         mPreference.setNetwork(MyConstants.NETWORK_TEST);
         mPreference.loadPreference();
     }
